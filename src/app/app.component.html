@@ -25,7 +25,6 @@
             <span 
               *ngIf="!projectForm.get('project').valid && projectForm.get('project').touched"
               class="help-block">
-              <span *ngIf="projectForm.get('project').errors['nameIsForbidden']">This project name is invalid</span>
               <span *ngIf="projectForm.get('project').errors['required']">Please enter a project name</span>
             </span>
         </div>
@@ -54,7 +53,7 @@
         <button 
           class="btn btn-primary" 
           type="submit"
-          [disabled]="!projectForm.valid">Submit</button>
+          >Submit</button>
       </form>
     </div>
   </div>
