@@ -51,7 +51,10 @@
             <option *ngFor="let s of statuses" [value]="s">{{ s }}</option>
           </select>
         </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
+        <button 
+          class="btn btn-primary" 
+          type="submit"
+          [disabled]="!projectForm.valid">Submit</button>
       </form>
     </div>
   </div>
